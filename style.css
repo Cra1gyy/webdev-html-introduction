@@ -80,7 +80,6 @@ nav{
 .navListItem a:hover{
     background-color: whitesmoke;
     color: black;
-    /* font-size: 18px; */
 }
 
 .readMore{
@@ -114,6 +113,7 @@ nav{
     padding: 10px;
     border-radius: 10px;
     text-decoration: none;
+    box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.5);
 }
 
 .backButton:hover{
@@ -123,6 +123,12 @@ nav{
     animation-name: buttonMove;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+
+@keyframes cardMove {
+    0% {bottom: 0px;}
+    50% {bottom: 6px;}
+    100% {bottom: 0px;}
 }
 
 .gameGrid{
@@ -138,7 +144,17 @@ nav{
 }
 
 .gameImg1 img{
+    position: relative;
     border-radius: 20px;
+    box-shadow: 5px 10px 8px 0 rgba(0, 0, 0, 0.2);
+    animation-name: cardMove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.gameImg1 img:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 10px 8px 2px rgba(0, 0, 0, 0.5);
 }
 
 .gameImg2{
@@ -147,7 +163,17 @@ nav{
 }
 
 .gameImg2 img{
+    position: relative;
     border-radius: 20px;
+    box-shadow: 5px 10px 8px 0 rgba(0, 0, 0, 0.2);
+    animation-name: cardMove;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+}
+
+.gameImg2 img:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 10px 8px 2px rgba(0, 0, 0, 0.5);
 }
 
 .gameImg3{
@@ -156,5 +182,15 @@ nav{
 }
 
 .gameImg3 img{
+    position: relative;
     border-radius: 20px;
+    box-shadow: 5px 10px 8px 0 rgba(0, 0, 0, 0.2);
+    animation-name: cardMove;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.gameImg3 img:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 10px 8px 2px rgba(0, 0, 0, 0.5);
 }
