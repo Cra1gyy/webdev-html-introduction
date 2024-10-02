@@ -1,0 +1,113 @@
+body{
+    background-color: whitesmoke;
+    display: grid;
+    margin: 0%;
+    padding: 0%;
+}
+
+main{
+    text-align: center;
+}
+
+header{
+    border-bottom: 1px solid black;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+
+    margin-top: 10%;
+}
+
+h2,h3,h4,h5,h6{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.quote{
+    font-family: serif;
+}
+
+nav{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    display: block;
+    position: fixed;
+
+    margin: 0%;
+    padding: 0%;
+
+    background-color: rgb(50, 43, 43);
+    width: 100%;
+}
+
+.navList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navListItem{
+    float: left;
+}
+
+.navListItem a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navListItem a:hover{
+    background-color: whitesmoke;
+    color: black;
+    font-size: 18px;
+}
+
+.readMore{
+    color: black;
+}
+
+.readMore:hover{
+    text-decoration: none;
+}
+
+.picture{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+@keyframes buttonMove {
+    0% {top: 0px; bottom: 0px;}
+    25% {top: 3px; bottom: 0px;}
+    50% {top: 3px; bottom: 0px;}
+    75% {top: 0px; bottom: 0px;}
+    100% {top: 0px; bottom: 0px;} 
+}
+
+.backButton{
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10%;
+    color: white;
+    font-size: large;
+    background-color: rgb(50, 43, 43);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.backButton:hover{
+    color: black;
+    background-color: whitesmoke;
+    border: solid 2px rgb(50, 43, 43);
+    animation-name: buttonMove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
